@@ -1,4 +1,4 @@
-const reduxHistoryPushMiddleware = (history, { metaKey = 'toPath', matcher } = {}) => {
+  const reduxHistoryPushMiddleware = (history, { metaKey = 'pushToRoute', matcher } = {}) => {
   let reMatcher;
   if (matcher && typeof matcher === 'string') {
     reMatcher = new RegExp(matcher);

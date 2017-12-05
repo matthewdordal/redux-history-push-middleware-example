@@ -17,7 +17,7 @@ export class Home extends Component {
         <p> First Name:: {firstName}</p>
         <ul>
           <li> <a onClick={(e) => this.handleUpdateName(e, 'Matt', { test: '/hi' })}>Matt</a></li>
-          <li onClick={(e) => this.handleUpdateName(e, 'Anders', { toPath: '/about'})}>Anders</li>
+          <li onClick={(e) => this.handleUpdateName(e, 'Anders', { pushToRoute: '/about'})}>Anders</li>
         </ul>
       </div>
     )
