@@ -1,9 +1,8 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import reducers from './reducers';
-
+import reduxHistoryPushMiddleware from 'redux-history-push-middleware'
 import createBrowserHistory from 'history/createBrowserHistory';
 
-import reduxHistoryPushMiddleware from './reduxHistoryPushMiddleware';
+import reducers from './reducers';
 
 export const history = createBrowserHistory()
 
